@@ -8,9 +8,12 @@ It supports:
 
 - Multi-entity modeling
 - Automated model selection (Linear, Random Forest, XGBoost)
-- Synthetic data generation
+- Sample data for testing
 - Batch result output
 - Scalable structure for future MLOps integration
+> Note: This repository uses a small sample dataset for demonstration purposes only. 
+> The framework is designed to scale to larger, production-grade datasets and 
+> multi-entity pricing systems.
 
 ---
 
@@ -32,7 +35,7 @@ requirements.txt
 
 - Entity-level pricing elasticity modeling
 - Automated best-model selection using R² & MAPE
-- Synthetic dataset generator for reproducibility
+- Sample dataset for algorithm testing
 - Batch output file generation
 - Production-ready modular structure
 
@@ -40,11 +43,24 @@ requirements.txt
 
 ## How to Run
 
-1. Generate synthetic data: python generate_synthetic_data.py
-2. Run modeling pipeline:python run_pipeline.py
+1. Install dependencies:
+pip install -r requirements.txt
+2. Run the pricing pipeline:
+python run_pipeline.py
+3. Output:
+Site-level model selection results
+Metrics (R², MAPE)
+Results saved as Model_Results.csv
 
-Results are saved as:Model_Results.csv
+---
 
+## Planned Enhancements
+
+- Margin and volume optimisation scenarios
+- Elasticity-based pricing recommendations
+- MLflow experiment tracking
+- Databricks-compatible MLOps architecture
+- AI-assisted executive summaries
 
 ---
 
